@@ -42,6 +42,9 @@
 *.idb
 *.pdb
 
+.DS_Store
+app
+
 # Kernel Module Compile Results
 *.mod*
 *.cmd
@@ -53,3 +56,4 @@ dkms.conf
 
 # debug information files
 *.dwo
+obj/
