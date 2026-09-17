@@ -12,8 +12,17 @@ tests:
     executable: /bin/cat
     args: ['obj/gcc_output.cmd']
     exit: 0
-    points: 50
+    points: 10
     stdout:
       - not:
           - contains: 'warning:'
+
+  - name: Test message
+    executable: /bin/cat
+    args: ['obj/gcc_output.cmd']
+    exit: 0
+    points: 40
+    stdout:
+      - not:
+          - contains: 'Hello world.'
 
